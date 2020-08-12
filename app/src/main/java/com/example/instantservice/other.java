@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 
 public class other extends AppCompatActivity {
@@ -20,6 +21,7 @@ public class other extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Toast.makeText(other.this, "check notfication", Toast.LENGTH_SHORT).show();
                 Intent intent=new Intent(other.this, notification.class);
                 startActivity(intent);
             }

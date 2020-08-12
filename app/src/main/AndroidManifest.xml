@@ -14,9 +14,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".notification"></activity>
+        <activity android:name=".electric"></activity>
+        <activity android:name=".notification" />
         <activity android:name=".other" />
-        <activity android:name=".elec" />
         <activity android:name=".Category" />
 
         <meta-data
