@@ -25,6 +25,12 @@ public class electric extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        b.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(electric.this, "ok", Toast.LENGTH_SHORT).show();
+            }
+        });
 
     }
 }
