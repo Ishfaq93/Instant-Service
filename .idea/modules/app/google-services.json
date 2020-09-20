@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "866904150424",
+    "firebase_url": "https://instant-service-15308.firebaseio.com",
+    "project_id": "instant-service-15308",
+    "storage_bucket": "instant-service-15308.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:866904150424:android:74d6c476c50ac0c29ddbed",
+        "android_client_info": {
+          "package_name": "com.example.instantservice"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "866904150424-q7unkdl5f59j71oe315r23f64oiu8v9p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.instantservice",
+            "certificate_hash": "7b4186a6a46fb6d78bfd2688ac6954c73d5effc2"
+          }
+        },
+        {
+          "client_id": "866904150424-u2vncvg373bpotaf82hc2v8tv0ogndpu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.instantservice",
+            "certificate_hash": "50609e7816ae91ad18d0a1f0ba28665cd752f0cc"
+          }
+        },
+        {
+          "client_id": "866904150424-4f8hb9oo2c659au4a6opcce1einrp8kr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBARsFmQ1_dUCXBKe0AkasMPN1sLH-wAq8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "866904150424-4f8hb9oo2c659au4a6opcce1einrp8kr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

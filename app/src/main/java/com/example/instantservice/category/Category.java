@@ -1,4 +1,4 @@
-package com.example.instantservice;
+package com.example.instantservice.category;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import com.example.instantservice.R;
 
 public class Category extends AppCompatActivity {
 
@@ -24,14 +26,14 @@ public class Category extends AppCompatActivity {
        b.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View view) {
-               Intent intent= new Intent(Category.this ,electric.class);
+               Intent intent= new Intent(Category.this , electric.class);
                startActivity(intent);
            }
        });
         b2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent= new Intent(Category.this ,other.class);
+                Intent intent= new Intent(Category.this , other.class);
                 startActivity(intent);
             }
         });

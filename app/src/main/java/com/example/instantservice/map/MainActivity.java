@@ -1,4 +1,4 @@
-package com.example.instantservice;
+package com.example.instantservice.map;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.app.Dialog;
@@ -8,41 +8,46 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
+
+import com.example.instantservice.category.Category;
+import com.example.instantservice.R;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GoogleApiAvailability;
 
 
 public class MainActivity extends AppCompatActivity {
 
-    private static final String TAG = "MainActivity";
     private Button butn;
+    private Button butn2;
+    private static final String TAG = "MainActivity";
 
     private static final int ERROR_DIALOG_REQUEST = 9001;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        butn=(Button)findViewById(R.id.btnNeed);
-
+        butn = (Button) findViewById(R.id.btnNeed);
+        butn2 = (Button) findViewById(R.id.btnFind);
         butn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent =new Intent(MainActivity.this,Category.class);
+                Intent intent = new Intent(MainActivity.this, Category.class);
                 startActivity(intent);
             }
         });
-
-        if(isServicesOK()){
+        if (isServicesOK()) {
             init();
+
         }
     }
 
     private void init(){
-        Button btnFind = (Button) findViewById(R.id.btnFind);
-        btnFind.setOnClickListener(new View.OnClickListener() {
+        butn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, Mapactivity.class);
+                Intent intent = new Intent(MainActivity.this, MapActivity.class);
                 startActivity(intent);
             }
         });
@@ -68,5 +73,8 @@ public class MainActivity extends AppCompatActivity {
         }
         return false;
     }
+
+
+
 
 }

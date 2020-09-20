@@ -3,6 +3,7 @@
     package="com.example.instantservice">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -14,30 +15,48 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".forgotpassword">
-        </activity>
-        <activity android:name=".signup" />
-        <activity android:name=".login" />
-        <activity android:name=".electric" />
-        <activity android:name=".notification" />
-        <activity android:name=".other" />
-        <activity android:name=".Category" />
-
-        <meta-data
-            android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyBWy9FEawsf_Z_euDPAu1puzNkbeAbauVY" />
-        <meta-data
-            android:name="com.google.android.gms.version"
-            android:value="@integer/google_play_services_version" />
-
-        <activity android:name=".MainActivity">
+        <activity android:name=".ForgetPassword.otpforgetpassword"></activity>
+        <activity android:name=".ForgetPassword.ForgetPasswordSuccessMessage" />
+        <activity android:name=".ForgetPassword.SetNewPassword" />
+        <activity android:name=".ForgetPassword.ForgetPassword" />
+        <activity android:name=".map.MapActivity" />
+        <activity android:name=".logIn_SignUp.OTPverfication" />
+        <activity android:name=".logIn_SignUp.signUp" />
+        <activity android:name=".logIn_SignUp.login">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Mapactivity" />
+        <activity android:name=".category.electric" />
+        <activity android:name=".notification.notification" />
+        <activity android:name=".category.other" />
+        <activity android:name=".category.Category" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDVrPgQhGzVlJH8cnW1te5_sbvT1i2-h00" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity android:name=".map.MainActivity" />
+
+        <service android:name=".notification.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name=".notification.MyNotificationService"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
     </application>
 
 </manifest>

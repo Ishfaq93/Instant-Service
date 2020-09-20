@@ -6,6 +6,10 @@
     <string name="second_fragment_label">Second Fragment</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
-    <string name="google_map_API_Key">AIzaSyBWy9FEawsf_Z_euDPAu1puzNkbeAbauVY</string>
+    <string name="enter_username">Enter username</string>
+    <string name="enter_password">Enter password</string>
+    <string name="login">Login</string>
+
+    <string name="google_map_API_Key">AIzaSyDVrPgQhGzVlJH8cnW1te5_sbvT1i2-h00</string>
 
 </resources>

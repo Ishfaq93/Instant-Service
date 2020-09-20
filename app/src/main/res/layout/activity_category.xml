@@ -3,38 +3,92 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@drawable/otp"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Category">
+    tools:context=".category.Category">
 
 
     <TextView
         android:id="@+id/cate"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="94dp"
+        android:background="@drawable/signup"
+        android:text="Category"
         android:textAlignment="center"
+        android:textColor="#FAFAFD"
         android:textSize="50dp"
-        android:textStyle="bold"
-        android:text="Category" />
+        android:textStyle="bold" />
 
 
-    <Button
-        android:id="@+id/btn2"
-        android:layout_marginTop="100dp"
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
         android:layout_width="match_parent"
-        android:layout_marginRight="50dp"
-        android:layout_marginLeft="50dp"
-        android:layout_height="wrap_content"
-        android:text="Electric and Sanitary " />
+        android:layout_height="200dp">
 
-    <Button
-        android:id="@+id/button4"
-        android:layout_marginTop="40dp"
-        android:layout_marginRight="50dp"
-        android:layout_marginLeft="50dp"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:background="@drawable/elcetric" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Electric and Sanatary"
+                android:textAlignment="center"
+                android:textColor="#DD2C00"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="320dp"
+            android:layout_height="match_parent"
+            android:background="#00FFFFFF" />
+    </RelativeLayout>
+
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Others" />
+        android:layout_height="148dp"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/needanthing" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Others"
+                android:textAlignment="center"
+                android:textColor="#C51162"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00FCFFFF" />
+    </RelativeLayout>
 
 </LinearLayout>

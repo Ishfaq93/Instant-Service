@@ -4,56 +4,85 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/main"
     android:orientation="vertical"
-    android:gravity="center"
-    tools:context=".MainActivity">
+    tools:context=".map.MainActivity">
 
-    <TextView
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="200dp">
+
+</LinearLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Welcome"
-        android:textAlignment="center"
-        android:textSize="30dp"
-        android:textStyle="bold" />
+        android:layout_height="100dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/location"
+            />
+            <TextView
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/colorBlack"
+                android:textSize="25dp"
+                android:text="Find my location"
+                />
+        </LinearLayout>
+        <Button
+            android:id="@+id/btnFind"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00FFFFFF"
+            />
 
-    <TextView
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:layout_marginTop="30dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="To"
-        android:textSize="30dp"
-        android:textAlignment="center"
-        android:textStyle="bold"
-        />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Instant Service"
-        android:textAlignment="center"
-        android:textSize="30dp"
-        android:textStyle="bold"
-        />
+        android:layout_height="100dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/needanthing"
+                />
+            <TextView
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/colorBlack"
+                android:textSize="25dp"
+                android:text="Need Something"
+                />
+        </LinearLayout>
+        <Button
+            android:id="@+id/btnNeed"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00FCFFFF"
+            />
 
+    </RelativeLayout>
 
-    <Button
-        android:id="@+id/btnFind"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:text="Find my location"
-        android:textSize="20sp"
-
-        />
-
-    <Button
-        android:id="@+id/btnNeed"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-
-        android:text="Need Something"
-        android:textSize="20sp"
-
-        />
 
 
 
